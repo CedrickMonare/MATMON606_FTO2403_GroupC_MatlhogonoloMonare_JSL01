@@ -3,8 +3,8 @@ function validateSyntax() {
     const regex = /^pet_[a-zA-Z0-9]+$/; //  Validation logic 
     let result = ''; 
 
-    // TODO: Write your validation logic here
-        // Check if input starts with 'pet_' and followed by alphanumeric characters
+   const resultElement = document.getElementById("result")
+   result = regex.test(input) ? "Valid Syntax" : "Invalid Syntax";  // Validation logic 
  
             document.getElementById('result').innerText = result;
 }
